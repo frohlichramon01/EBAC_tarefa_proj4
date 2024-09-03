@@ -1,5 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 $bgColor: yellow;
+$textColor: black;
+$secTextColor: red;
+
+
+@font-face{
+    font-family: 'floyd';
+    src: url(/assets/fonts/floyd.TTF);
+}
 
 body{
     background-color: $bgColor;
+    font-family: floyd, sans-serif;
+}
+
+@mixin title($fontSize: 28px){
+    @include text($fontSize);
+    color: $textColor;
+}
+
+@mixin text($fontSize: 16px){
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text();
+}
+
+.text--small {
+    @include text(12px);
 }
