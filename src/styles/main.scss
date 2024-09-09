@@ -7,7 +7,7 @@
 }
 
 $bgColor: black;
-$textColor: black;
+$textColor: white;
 $secTextColor: red;
 
 
@@ -18,6 +18,7 @@ $secTextColor: red;
 
 body{
     background-color: $bgColor;
+    color:$textColor;
     font-family: floyd, sans-serif;
 }
 
@@ -42,3 +43,35 @@ body{
 .text--small {
     @include text(12px);
 }
+
+.button {
+    width: 150px;
+    background-color: rgba(245, 245, 245, 0.9);
+    border: 2px solid rgb(170, 170, 170);
+    border-radius: 2px;
+    box-shadow: rgb(170, 170, 170) 2px 2px 0 0;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    touch-action: manipulation;
+  }
+  
+  .button:hover {
+    background-color: #fff;
+  }
+  
+  .button:active {
+    box-shadow: rgb(170, 170, 170) 4px 4px 0 0;
+    transform: translate(2px, 2px);
+  }
+  
+
+  ul li {
+    display: inline-block;
+    margin-top: 50%;
+  }

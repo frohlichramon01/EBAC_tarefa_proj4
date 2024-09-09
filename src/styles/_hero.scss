@@ -1,12 +1,15 @@
 .hero {
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    min-height: 519px;
+    min-height: 615px;
     background-image: url(/dist/images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;   
 
     &__content{
-        max-width: 640px;
+        display: grid;
+        justify-content: end;
+        max-width: 700px;
+        
+        
 
         &__branding{
             margin: 0 auto;
