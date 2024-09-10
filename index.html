@@ -13,22 +13,24 @@
 
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Pink Floyd - The Wall</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#cast">Cast</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#music">Music</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class=" collapse navbar-collapse" id="navbarNav">
+                <a class="navbar-brand" href="#" style="margin-left: 30px">Pink Floyd - The Wall</a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item" style="margin-left: 30px;">
+                        <a class="nav-link" href="#cast">Cast</a>
+                    </li>
+                    <li class="nav-item" style="margin-left: 30px; margin-right: 30px">
+                        <a class="nav-link" href="#music">Soundtrack</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <section id="carousel" class="carousel">
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
@@ -76,35 +78,140 @@
         </button>
         </div>
     </section>
-    <section id="about" class="about">
-        <p></p>
-        Pink Floyd The Wall is a 1982 British live action/adult animated surrealist musical drama film directed by
-        Alan
-        Parker, based on Pink Floyd's 1979 album The Wall. The screenplay was written by Pink Floyd vocalist and
-        bassist
-        Roger Waters. The Boomtown Rats vocalist Bob Geldof made his film debut as rock star Pink, who, driven to
-        neurosis by the pressures of stardom and traumatic events in his life, constructs an emotional and mental
-        wall
-        to protect himself. However, this coping mechanism eventually backfires, and Pink demands to be set free.
-        </p>
+    <section id="about" class="about" style="margin-top: 50px;">
+        <div class="container">
+            <hr>
+            <h1>About:</h1>
+            <p style="margin-top: 50px">
+                Pink Floyd The Wall is a 1982 British live action/adult animated surrealist musical drama film directed
+                by
+                Alan
+                Parker, based on Pink Floyd's 1979 album The Wall. The screenplay was written by Pink Floyd vocalist and
+                bassist
+                Roger Waters. The Boomtown Rats vocalist Bob Geldof made his film debut as rock star Pink, who, driven
+                to
+                neurosis by the pressures of stardom and traumatic events in his life, constructs an emotional and
+                mental
+                wall
+                to protect himself. However, this coping mechanism eventually backfires, and Pink demands to be set
+                free.
+            </p>
+            <p>A documentary was produced about the making of Pink Floyd – The Wall entitled The Other Side of the Wall
+                that includes interviews with Parker, Scarfe, and clips of Waters; it originally aired on MTV in 1982. A
+                second documentary about the film was produced in 1999 entitled Retrospective: Looking Back at The Wall
+                that includes interviews with Waters, Parker, Scarfe, and other members of the film's production team.
+                Both are featured on The Wall DVD as extras.</p>
+        </div>
     </section>
-    <section id="cast" class="cast">
-        <p></p>
-        main CAST:
-        Bob Geldof as Pink
-        Christine Hargreaves as Pink's mother
-        Eleanor David as Pink's wife
-        Alex McAvoy as Teacher
-        Bob Hoskins as Rock manager
-        Michael Ensign as Hotel manager
-        James Laurenson as Pink's father
-        </p>
+    <section id="cast" class="cast" style="height: 800px;">
+        <div class="container">
+            <hr>
+            <h1>Main cast:</h1>
+            <ul id="cast-list-top">
+                <li>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./dist/images/bob_geldof.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Bob Geldof <br>as Pink</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./dist/images/christine_hargreaves.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Christine Hargreaves <br>as Pink's mother</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./dist/images/eleanor_david.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Eleanor David <br>as Pink's wife</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./dist/images/alex_mcavoy.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Alex McAvoy <br>as Teacher</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="cast-list-bottom">
+                <li>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./dist/images/bob_hoskins.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Bob Hoskins <br>as Rock manager</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./dist/images/michael_ensign.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Michael Ensign <br>as Hotel manager</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./dist/images/james_laurenson.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">James Laurenson <br>as Pink's father</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
-    <section id="music" class="music">
-        <p>lista de musicas:
+    <section id="music" class="music" style="height: 800px;">
+        <div class="container">
+            <hr>
+            <h1>Soundtrack:</h1>
+            <p>The film soundtrack contains most songs from the album, albeit with several changes, as well as
+                additional material:</p>
 
-        </p>
+            <ol>
+                <li>"When the Tigers Broke Free, Part 1"</li>
+                <li>"In the Flesh?"</li>
+                <li>"The Thin Ice"</li>
+                <li>"Another Brick in the Wall, Part 1"</li>
+                <li>"When the Tigers Broke Free, Part 2"</li>
+                <li>"Goodbye Blue Sky"</li>
+                <li>"The Happiest Days of Our Lives"</li>
+                <li>"Another Brick in the Wall, Part 2"</li>
+                <li>"Mother"</li>
+                <li>"What Shall We Do Now?"</li>
+                <li>"Young Lust"</li>
+                <li>"One of My Turns"</li>
+                <li>"Don't Leave Me Now"</li>
+                <li>"Another Brick in the Wall, Part 3"</li>
+                <li>"Goodbye Cruel World"</li>
+                <li>"Is There Anybody Out There?"</li>
+                <li>"Nobody Home"</li>
+                <li>"Vera"</li>
+                <li>"Bring the Boys Back Home"</li>
+                <li>"Comfortably Numb"</li>
+                <li>"In the Flesh"</li>
+                <li>"Run Like Hell"</li>
+                <li>"Waiting for the Worms"</li>
+                <li>"5:11 AM (The Moment of Clarity)" / "Your Possible Pasts" / "Stop"</li>
+                <li>"The Trial"</li>
+                <li>"Outside the Wall"</li>
+            </ol>
+        </div>
     </section>
+    <br> <br><br> <br>
+    <footer class="bg-dark text-center text-lg-start mt-5">
+        <div class="text-center p-3 footer">
+            <h6>created by frohlichramon01</h6>
+        </div>
+    </footer>
 
 
 
