@@ -1,14 +1,16 @@
-
-
+// Reset
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-$bgColor: black;
-$textColor: white;
-$secTextColor: red;
+// Variables
+$bgColor: rgb(20, 20, 20);
+$textColor: rgb(240, 240, 240);
+$titleSize: 60px;
+$textSize: 24px;
+$standartBottomMargin: 40px;
 
 
 @font-face{
@@ -16,79 +18,100 @@ $secTextColor: red;
     src: url(/assets/fonts/floyd.TTF);
 }
 
+
 body{
     background-color: $bgColor;
     color:$textColor;
     font-family: floyd, sans-serif;
 }
 
+
+// About section style
 .about h1{
     text-align: center;
-    font-size: 60px;
-    margin-bottom: 40px;
+    font-size: $titleSize;
+    margin-bottom: $standartBottomMargin;
   }
 
 .about p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
+    font-family: "SUSE", sans-serif;
+    font-size: $textSize;
     text-align: justify;    
 }
 
-  ul li {
+// Cast section style
+ul li {
     display: inline-block;
-  }
+}
 
-  #cast-list-top{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    margin-right: 10%;
-    margin-left: 10%;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+#cast-list-top{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $standartBottomMargin;
+  margin-right: 10%;
+  margin-left: 10%;
+  font-family: "SUSE", sans-serif;
+}
 
-  #cast-list-bottom{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-right: 20%;
-    margin-left: 20%;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+#cast-list-bottom{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-right: 20%;
+  margin-left: 20%;
+  font-family: "SUSE", sans-serif;
+}
 
-  .card-text{
-    text-align: center;
-  }
+.card-text{
+  text-align: center;
+}
 
-  .cast h1 {
-    text-align: center;
-    font-size: 60px;
-    margin-bottom: 40px;
-  }
+.cast h1 {
+  text-align: center;
+  font-size: $titleSize;
+  margin-bottom: $standartBottomMargin;
+}
+
+.card{
+  transition: transform .2s;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
   
+
+// Music section style
 .music{
     margin-bottom: 250px;
 }
 
 .music p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-family: "SUSE", sans-serif;
+    font-size: $textSize;
 }
 
-  .music h1{
-    text-align: center;
-    font-size: 60px;
-    margin-bottom: 40px;
-  }
+.music h1{
+  text-align: center;
+  font-size: $titleSize;
+  margin-bottom: $standartBottomMargin;
+}
 
-  .music ol {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    margin-top:40px;
-    padding-left: 150px;
-  }
+.music ol {
+  font-family: "SUSE", sans-serif;
+  font-size: $textSize;
+  margin-top:40px;
+  padding-left: 150px;
+}
 
-  footer{
-    margin-top: 100px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+
+
+
+footer{
+  margin-top: 100px;
+  font-family: "SUSE", sans-serif;
+}
+
+#copyright {
+  font-size: 12px;
+}
